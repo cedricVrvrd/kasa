@@ -1,11 +1,12 @@
 import React from 'react';
+import CardContainer from '../components/CardContainer';
 import Header from '../components/Header';
 
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
             <Header />
+            <CardContainer />
         </div>
     );
 };

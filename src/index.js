@@ -3,8 +3,9 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FicheLogements from "./pages/FicheLogements";
-import Apropos from "./pages/Apropos";
+import Apropos from "./pages/APropos";
 import PageError from "./pages/PageError";
+import "./styles/main.css"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
