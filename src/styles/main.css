@@ -7,7 +7,6 @@ body{
     margin-right: auto;
     box-sizing: border-box;
     font-family: Montserrat, arial;
-    background-color: rgb(138, 138, 180);
 }
 
 /* --------------------------------------------------------------------- */
@@ -17,6 +16,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    margin-bottom: 43px;
 }
 #header img{
     height: 68px;
@@ -35,7 +35,7 @@ color: #FF6060;
     display: flex;
 }
 #header li{   
-    margin-right: 20px;
+    margin-left: 20px;
     list-style-type: none;
 }
 #header li :active {
@@ -53,3 +53,23 @@ color: #FF6060;
 /* --------------------------------------------------------------------- */
 /* ------------------------BANNER--------------------------------------- */
 /* --------------------------------------------------------------------- */
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 223px;
+    top: 171px;
+    background: url("../assets/images/banner.png") center center;
+    border-radius: 25px;
+    mix-blend-mode : darken
+}
+#banner img{
+    z-index: 2;
+    filter: brightness(50%);
+}
+#banner h2{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+}
