@@ -17,14 +17,12 @@ const CardContainer = () => {
 
 
     return (
-        <div className='.container'>
-            <div className='flex'>
+        <div id='container'>
              {/* on parcours nos logements, on donne un id, on passe 
              la props logement a notre composant card logement={logement} */}
                 {data.map((logement) => (
                    <Card key={logement.id} logement ={logement}/>
                 ))}
-            </div>
         </div>
     );
 };
