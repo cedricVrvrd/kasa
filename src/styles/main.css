@@ -7,7 +7,7 @@
   font-family: Montserrat, arial;
 }
 #root {
-  width: 1240px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -150,4 +150,47 @@
   justify-content: center;
   text-decoration-line: underline;
   color: #ff6060;
+}
+/* --------------------------------------------------------------------- */
+/* --------------------ACCORDION---------------------------------------- */
+/* --------------------------------------------------------------------- */
+.accordion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.accordion-item {
+  margin-bottom: 31px;
+  width: 1023px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: white;
+  width: 1023px;
+  font-weight: 500;
+  height: 47px;
+  align-items: center;
+  border-radius: 5px;
+  line-height: 142.6%;
+  background-color: #ff6060;
+  padding: 0 18px 0 18px;
+}
+.accordion-content {
+  color: #ff6060;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 27px;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------APROPOS------------------------------- */
+/* -------------------------------------------------------------------- */
+.bannerAbout {
+  border-radius: 10px;
+  filter: brightness(70%);
+  height: 223px;
+  margin-bottom: 30px;
 }
