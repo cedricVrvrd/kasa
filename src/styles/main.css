@@ -40,10 +40,10 @@
   margin-left: 20px;
   list-style-type: none;
 }
-#header li :active {
+/* #header li :active {
   text-decoration-line: underline;
   color: #ff6060;
-}
+} */
 #header nav a {
   text-decoration: none;
   color: #ff6060;

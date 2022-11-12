@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Slider from "../components/Slider";
+import Header from "../components/Header";
 
-const FicheLogements = () => {
+const FicheLogement = () => {
   // variables necessaires.
   const [logement, setLogement] = useState();
   const { id } = useParams();
@@ -21,8 +22,9 @@ const FicheLogements = () => {
   // si cardData...
   return logement ? (
     <div>
-      <h2>{logement.title}</h2>
+      <Header />
       <Slider logement={logement.pictures} />
+      <h2>{logement.title}</h2>
       {/* fin exemple */}
     </div>
   ) : (
@@ -30,4 +32,4 @@ const FicheLogements = () => {
   );
 };
 
-export default FicheLogements;
+export default FicheLogement;

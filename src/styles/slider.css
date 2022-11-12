@@ -80,7 +80,7 @@
   transition: 0.5s;
 }
 
-.active,
+.activ,
 .dot:hover {
   background-color: gray;
 }
