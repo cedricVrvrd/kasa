@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Slider from "../components/Slider";
 
 const FicheLogements = () => {
-  //
+  // variables necessaires.
   const [logement, setLogement] = useState();
   const { id } = useParams();
 
-  // on fetch sur la base de donnée et on tri avec l'id via .find()
+  // on fetch sur la base de donnée et on tri sur l'id via .find()
   useEffect(() => {
     const fetcher = () =>
       fetch("../../dbLogements.json")
@@ -20,9 +21,8 @@ const FicheLogements = () => {
   // si cardData...
   return logement ? (
     <div>
-      <h1>logement</h1>
-      {/* exemple pour workplace */}
       <h2>{logement.title}</h2>
+      <Slider logement={logement.pictures} />
       {/* fin exemple */}
     </div>
   ) : (
