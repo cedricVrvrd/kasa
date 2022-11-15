@@ -161,8 +161,8 @@
 }
 .accordion-item {
   margin-bottom: 31px;
-  width: 1023px;
   border-radius: 5px;
+  width: 1023px;
   background-color: #f7f7f7;
 }
 .accordion-title {
@@ -171,6 +171,7 @@
   font-size: 24px;
   color: white;
   width: 1023px;
+  width: 100%;
   font-weight: 500;
   height: 47px;
   align-items: center;
@@ -185,6 +186,16 @@
   font-weight: 400;
   padding: 27px;
 }
+.accordionFiche {
+  width: 300px;
+}
+.accordionFiche .accordion-item {
+  width: 300px;
+}
+.accordionFiche .accordion-title {
+  width: 300px;
+}
+
 /* -------------------------------------------------------------------- */
 /* ------------------------------APROPOS------------------------------- */
 /* -------------------------------------------------------------------- */
@@ -193,4 +204,49 @@
   filter: brightness(70%);
   height: 223px;
   margin-bottom: 30px;
+}
+/* --------------------------------------------------------------------- */
+/* -----------------FicheLogement--------------------------------------- */
+/* --------------------------------------------------------------------- */
+.container_info {
+  display: flex;
+  justify-content: space-between;
+}
+.container_tittle {
+  font-weight: 500;
+  color: #ff6060;
+}
+.container_tittle h2 {
+  font-size: 36px;
+}
+.container_tittle span {
+  font-size: 18px;
+}
+.liste {
+  display: flex;
+}
+.list .spanList {
+  color: white;
+  background-color: #ff6060;
+  padding: 0px 20px 0px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.container_hostRating {
+  display: flex;
+  color: #ff6060;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+.container_hostRating p {
+  width: min-content;
+  margin-right: 10px;
+}
+.container_hostRating img {
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
 }
