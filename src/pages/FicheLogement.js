@@ -4,7 +4,6 @@ import Slider from "../components/Slider";
 import Header from "../components/Header";
 import Accordion from "../components/Accordion";
 import Tags from "../components/Tags";
-import PageError from "./PageError";
 
 const FicheLogement = () => {
   // variables necessaires.
@@ -61,7 +60,7 @@ const FicheLogement = () => {
       </div>
     </div>
   ) : (
-    <PageError />
+    ""
   );
 };
 
