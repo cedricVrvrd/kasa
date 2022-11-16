@@ -4,6 +4,7 @@ import Slider from "../components/Slider";
 import Header from "../components/Header";
 import Accordion from "../components/Accordion";
 import Tags from "../components/Tags";
+import PageError from "./PageError";
 
 const FicheLogement = () => {
   // variables necessaires.
@@ -46,17 +47,21 @@ const FicheLogement = () => {
       </section>
 
       <div className="accordionFiche">
-        <Accordion title="Description" content={logement.description} />
-        <Accordion
-          title="Equipement"
-          content={logement.equipments.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        />
+        <div>
+          <Accordion title="Description" content={logement.description} />
+        </div>
+        <div>
+          <Accordion
+            title="Equipement"
+            content={logement.equipments.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          />
+        </div>
       </div>
     </div>
   ) : (
-    ""
+    <PageError />
   );
 };
 

@@ -5,9 +5,10 @@
 /* Slideshow container */
 .slider-container {
   position: relative;
-  margin: 50px auto 20px auto;
-  width: 600px;
-  height: 300px;
+  /* margin: 50px auto 20px auto; */
+  border-radius: 25px;
+  width: 1240px;
+  height: 415px;
 }
 
 /* Style each slide */
@@ -21,6 +22,7 @@
   width: 100%;
   max-height: 300px;
   object-fit: cover;
+  border-radius: 25px;
 }
 
 /* Next & previous buttons */
@@ -62,29 +64,6 @@
   font-weight: bold;
   color: #fff;
 }
-
-/* The dots indicator */
-.dots {
-  display: flex;
-  justify-content: center;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-.activ,
-.dot:hover {
-  background-color: gray;
-}
-
 /* Fading animation */
 .fade {
   animation-name: fade;

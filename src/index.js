@@ -15,7 +15,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/fiche_logement/:id" element={<FicheLogement />} />
         <Route path="/a_propos" element={<Apropos />} />
-        <Route path="/*" element={<PageError />} />
+        <Route path="*" element={<PageError />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -41,8 +41,11 @@ const Slider = ({ logement }) => {
           &gt;
         </button>
       </div>
+      <div>
+        {currentIndex + 1}/{logement.length}
+      </div>
       {/* Render dots indicator */}
-      <div className="dots">
+      {/* <div className="dots">
         {logement.map((photo, index) => (
           <span
             key={index}
@@ -52,7 +55,7 @@ const Slider = ({ logement }) => {
             onClick={() => setCurrentIndex(logement.indexOf(photo))}
           ></span>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
