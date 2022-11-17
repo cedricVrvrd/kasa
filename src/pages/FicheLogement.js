@@ -4,6 +4,7 @@ import Slider from "../components/Slider";
 import Header from "../components/Header";
 import Accordion from "../components/Accordion";
 import Tags from "../components/Tags";
+import Rate from "../components/Rate";
 
 const FicheLogement = () => {
   // variables necessaires.
@@ -40,8 +41,13 @@ const FicheLogement = () => {
           </div>
         </div>
         <div className="container_hostRating">
-          <p>{logement.host.name}</p>
-          <img src={logement.host.picture} alt="proprietaire" />
+          <div className="host">
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} alt="proprietaire" />
+          </div>
+          <div>
+            <Rate className="rateStar" rate={logement.rating} />
+          </div>
         </div>
       </section>
 

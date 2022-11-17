@@ -252,6 +252,7 @@
 }
 .container_hostRating {
   display: flex;
+  flex-direction: column;
   color: #ff6060;
   align-items: center;
   font-weight: 500;
@@ -261,8 +262,25 @@
   width: min-content;
   margin-right: 10px;
 }
-.container_hostRating img {
+.host {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.host img {
   border-radius: 100px;
   width: 64px;
   height: 64px;
+}
+/* ----------------------------------------------------------------------------- */
+/* ------------------------ rating --------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+.ratingStar .rateStar {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+img.ratingStar {
+  margin-right: 10px;
+  font-size: 24px;
 }
