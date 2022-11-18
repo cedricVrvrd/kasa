@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Slider from "../components/Slider";
-import Header from "../components/Header";
 import Accordion from "../components/Accordion";
 import Tags from "../components/Tags";
 import Rate from "../components/Rate";
@@ -24,7 +23,6 @@ const FicheLogement = () => {
   // si cardData...
   return logement ? (
     <div>
-      <Header />
       <Slider logement={logement.pictures} />
       <section className="container_info">
         <div className="container_tittle">

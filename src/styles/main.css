@@ -61,7 +61,6 @@
 /* ------------------------BANNER home page------------------------ */
 /* --------------------------------------------------------------------- */
 #banner {
-  width: 1240px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +70,8 @@
   margin-bottom: 43px;
 }
 #banner img {
+  width: 100%;
+  height: 100%;
   border-radius: 25px;
   position: absolute;
   object-fit: cover;
@@ -99,8 +100,6 @@
   padding: 56px 50px 0 50px;
 }
 .globalCard {
-  /* width: 50%; */
-  /* min-width: 335px; */
   max-width: 340px;
   height: 340px;
   margin-bottom: 56px;
@@ -213,16 +212,6 @@
 .accordionFiche li {
   list-style-type: none;
 }
-
-/* -------------------------------------------------------------------- */
-/* ------------------------------APROPOS------------------------------- */
-/* -------------------------------------------------------------------- */
-.bannerAbout {
-  border-radius: 10px;
-  filter: brightness(70%);
-  height: 223px;
-  margin-bottom: 30px;
-}
 /* --------------------------------------------------------------------- */
 /* -----------------FicheLogement--------------------------------------- */
 /* --------------------------------------------------------------------- */
@@ -290,4 +279,21 @@
 img.ratingStar {
   margin-right: 10px;
   font-size: 24px;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------APROPOS------------------------------- */
+/* -------------------------------------------------------------------- */
+.aboutBanner {
+  height: 223px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.bannerAbout {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  filter: brightness(70%);
+  object-fit: cover;
 }
