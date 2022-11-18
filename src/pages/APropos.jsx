@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "../components/Accordion";
 import Header from "../components/Header";
+import Mountain from "../assets/images/mountain.png"
 
 const Apropos = () => {
   const accordionData = [
@@ -40,7 +41,7 @@ const Apropos = () => {
       {/* <div> */}
       <img
         className="bannerAbout"
-        src="./mountain.png"
+        src= {Mountain}
         alt=" montagne enneigée avec cours d'eau"
       />
       {/* </div> */}

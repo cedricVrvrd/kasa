@@ -44,18 +44,6 @@ const Slider = ({ logement }) => {
       <div>
         {currentIndex + 1}/{logement.length}
       </div>
-      {/* Render dots indicator */}
-      {/* <div className="dots">
-        {logement.map((photo, index) => (
-          <span
-            key={index}
-            // highlight the dot that corresponds to the current photo
-            className={logement[currentIndex] === photo ? "dot activ" : "dot"}
-            // when the user clicks on a dot, go to the corresponding photo
-            onClick={() => setCurrentIndex(logement.indexOf(photo))}
-          ></span>
-        ))}
-      </div> */}
     </div>
   );
 };

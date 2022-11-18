@@ -5,10 +5,10 @@
 /* Slideshow container */
 .slider-container {
   position: relative;
-  /* margin: 50px auto 20px auto; */
+  margin: 50px auto 20px auto;
   border-radius: 25px;
-  width: 1240px;
-  height: 415px;
+  max-width: 1240px;
+  max-height: 415px;
 }
 
 /* Style each slide */
@@ -20,7 +20,7 @@
 
 .photo {
   width: 100%;
-  max-height: 300px;
+  max-height: 415px;
   object-fit: cover;
   border-radius: 25px;
 }

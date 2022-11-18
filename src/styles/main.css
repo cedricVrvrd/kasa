@@ -6,7 +6,12 @@
   box-sizing: border-box;
   font-family: Montserrat, arial;
 }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 #root {
+  width: 93%;
   max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
@@ -56,7 +61,7 @@
 /* ------------------------BANNER home page------------------------ */
 /* --------------------------------------------------------------------- */
 #banner {
-  width: 100%;
+  width: 1240px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +99,9 @@
   padding: 56px 50px 0 50px;
 }
 .globalCard {
-  width: 340px;
+  /* width: 50%; */
+  /* min-width: 335px; */
+  max-width: 340px;
   height: 340px;
   margin-bottom: 56px;
 }
