@@ -7,7 +7,7 @@ const PageError = () => {
         <div>
             <div id="errorMsg">
             <h1>404</h1>
-            <p>Oups ! La page que vous demandez n'existe pas.</p>
+            <p>Oups ! La page que vous&nbsp;demandez&nbsp;n'existe&nbsp;pas.</p>
             <NavLink className="stepBack" to="/">Retourner sur la page d'accueil</NavLink>
         </div>
         

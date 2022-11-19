@@ -42,7 +42,7 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .accordion-title {
     font-size: 13px;
   }

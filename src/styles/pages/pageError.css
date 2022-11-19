@@ -44,7 +44,7 @@
     margin-top: 133px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   #errorMsg h1 {
     font-size: 96px;
     margin-bottom: 11px;

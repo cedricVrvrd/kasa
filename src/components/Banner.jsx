@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div  id='banner'>
             <img src='./banner.png' alt="banniere de fond"/>
-            <h2>Chez vous, partout et ailleurs</h2>
+            <h2>Chez vous, partout&nbsp;et&nbsp;ailleurs</h2>
         </div>
     );
 };
