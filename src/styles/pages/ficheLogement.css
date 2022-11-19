@@ -1,0 +1,74 @@
+.container_info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.container_tittle {
+  font-weight: 500;
+  color: #ff6060;
+}
+.container_tittle h2 {
+  font-size: 36px;
+}
+.container_tittle span {
+  font-size: 18px;
+}
+.liste {
+  display: flex;
+  margin-top: 20px;
+}
+.list {
+  margin-top: 20px;
+}
+.list .spanList {
+  color: white;
+  background-color: #ff6060;
+  padding: 0px 20px 0px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.container_hostRating {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+.container_hostRating p {
+  width: min-content;
+  margin-right: 10px;
+}
+.host {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.host img {
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+}
+
+/* --------------------accordion fiche logement---------------------------------- */
+.accordionFiche {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.accordionFiche .accordion-item {
+  width: 582px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.accordionFiche .accordion-title {
+  width: 582px;
+  padding: 13px 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.accordionFiche li {
+  list-style-type: none;
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import "../styles/slider.css";
 
 const Slider = ({ logement }) => {
   // show the photo with this index

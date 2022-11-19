@@ -1,0 +1,52 @@
+/* --------------------------------------------------------------------- */
+/* --------------------ACCORDION---------------------------------------- */
+/* --------------------------------------------------------------------- */
+.accordion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.accordion-item {
+  margin-bottom: 31px;
+  border-radius: 5px;
+  width: 1023px;
+  background-color: #f7f7f7;
+}
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: white;
+  width: 1023px;
+  width: 100%;
+  font-weight: 500;
+  height: 47px;
+  align-items: center;
+  border-radius: 5px;
+  line-height: 142.6%;
+  background-color: #ff6060;
+  padding: 0 18px 0 18px;
+}
+.accordion-content {
+  color: #ff6060;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 27px;
+}
+@media screen and (max-width: 790px) {
+  .accordion-title {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .accordion-content {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .accordion-title {
+    font-size: 13px;
+  }
+  .accordion-content {
+    font-size: 12px;
+  }
+}

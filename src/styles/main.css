@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap");
+@import "../styles/components/slider.css";
+@import "../styles/components/header.css";
+@import "../styles/components/banner.css";
+@import "../styles/components/card.css";
+@import "../styles/components/cardContainer.css";
+@import "../styles/components/accordion.css";
+
+@import "../styles/pages/pageError.css";
+@import "../styles/pages/ficheLogement.css";
+@import "../styles/pages/aPropos.css";
 
 * {
   margin: 0;
@@ -16,258 +26,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* --------------------------------------------------------------------- */
-/* ----------------------HEADER ---------------------------------------- */
-/* --------------------------------------------------------------------- */
-#header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 43px;
-}
-#header img {
-  height: 68px;
-}
-#header nav {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 142.6%;
-  display: flex;
-  align-items: center;
-  color: #ff6060;
-}
-#header ul {
-  display: flex;
-}
-#header li {
-  margin-left: 20px;
-  list-style-type: none;
-}
-#header li :active {
-  text-decoration-line: underline;
-  color: #ff6060;
-}
-#header nav a {
-  text-decoration: none;
-  color: #ff6060;
-}
-#header nav a :hover {
-  text-decoration-line: underline;
-  color: #ff6060;
-}
-/* --------------------------------------------------------------------- */
-/* ------------------------BANNER home page------------------------ */
-/* --------------------------------------------------------------------- */
-#banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 223px;
-  border-radius: 25px;
-  position: relative;
-  margin-bottom: 43px;
-}
-#banner img {
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-  position: absolute;
-  object-fit: cover;
-  filter: brightness(70%);
-  overflow: hidden;
-}
-#banner h2 {
-  position: absolute;
-  text-align: center;
-  color: white;
-  font-size: 48px;
-  font-weight: 500;
-  z-index: 50;
-}
-/* -------------------------------------------------------------------- */
-/* ---------------------Cards + cards Container------------------------ */
-/* -------------------------------------------------------------------- */
 
-/* container */
-#container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background: #f7f7f7;
-  border-radius: 25px;
-  padding: 56px 50px 0 50px;
-}
-.globalCard {
-  max-width: 340px;
-  height: 340px;
-  margin-bottom: 56px;
-}
-.card {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  border-radius: 10px;
-}
-.cardTitle {
-  position: absolute;
-  left: 5.88%;
-  right: 5.88%;
-  top: 78.82%;
-  bottom: 5.88%;
-  color: white;
-  font-size: 18px;
-}
-/* ------------------------------------------------------------------- */
-/* --------------------------PAGE ERROR 404--------------------------- */
-/* ------------------------------------------------------------------- */
-#errorMsg h1 {
-  margin-top: 169px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 288px;
-  text-align: center;
-  color: #ff6060;
-  margin-bottom: 66px;
-}
-#errorMsg p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 142.6%;
-  text-align: center;
-  color: #ff6060;
-}
-.stepBack {
-  margin-top: 182px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 142.6%;
-  display: flex;
-  justify-content: center;
-  text-decoration-line: underline;
-  color: #ff6060;
-}
-/* --------------------------------------------------------------------- */
-/* --------------------ACCORDION---------------------------------------- */
-/* --------------------------------------------------------------------- */
-.accordion {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.accordion-item {
-  margin-bottom: 31px;
-  border-radius: 5px;
-  width: 1023px;
-  background-color: #f7f7f7;
-}
-.accordion-title {
-  display: flex;
-  justify-content: space-between;
-  font-size: 24px;
-  color: white;
-  width: 1023px;
-  width: 100%;
-  font-weight: 500;
-  height: 47px;
-  align-items: center;
-  border-radius: 5px;
-  line-height: 142.6%;
-  background-color: #ff6060;
-  padding: 0 18px 0 18px;
-}
-.accordion-content {
-  color: #ff6060;
-  font-size: 24px;
-  font-weight: 400;
-  padding: 27px;
-}
-/* --------------------accordion fiche logement---------------------------------- */
-.accordionFiche {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.accordionFiche .accordion-item {
-  width: 582px;
-  font-size: 18px;
-  font-weight: 400;
-}
-.accordionFiche .accordion-title {
-  width: 582px;
-  padding: 13px 20px;
-  font-size: 18px;
-  font-weight: 500;
-}
-.accordionFiche li {
-  list-style-type: none;
-}
-/* --------------------------------------------------------------------- */
-/* -----------------FicheLogement--------------------------------------- */
-/* --------------------------------------------------------------------- */
-.container_info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
-.container_tittle {
-  font-weight: 500;
-  color: #ff6060;
-}
-.container_tittle h2 {
-  font-size: 36px;
-}
-.container_tittle span {
-  font-size: 18px;
-}
-.liste {
-  display: flex;
-  margin-top: 20px;
-}
-.list {
-  margin-top: 20px;
-}
-.list .spanList {
-  color: white;
-  background-color: #ff6060;
-  padding: 0px 20px 0px 20px;
-  font-weight: 500;
-  font-size: 14px;
-  border-radius: 10px;
-  margin-right: 10px;
-}
-.container_hostRating {
-  display: flex;
-  flex-direction: column;
-  color: #ff6060;
-  align-items: center;
-  font-weight: 500;
-  font-size: 18px;
-}
-.container_hostRating p {
-  width: min-content;
-  margin-right: 10px;
-}
-.host {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.host img {
-  border-radius: 100px;
-  width: 64px;
-  height: 64px;
-}
 /* ----------------------------------------------------------------------------- */
 /* ------------------------ rating --------------------------------------------- */
 /* ----------------------------------------------------------------------------- */
@@ -281,19 +40,8 @@ img.ratingStar {
   font-size: 24px;
 }
 
-/* -------------------------------------------------------------------- */
-/* ------------------------------APROPOS------------------------------- */
-/* -------------------------------------------------------------------- */
-.aboutBanner {
-  height: 223px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-.bannerAbout {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  filter: brightness(70%);
-  object-fit: cover;
-}
+/* @media screen and (max-width: 640px) {
+  .accordion-title {
+    font-size: 13px;
+  }
+} */
