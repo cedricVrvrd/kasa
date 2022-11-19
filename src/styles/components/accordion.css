@@ -33,7 +33,7 @@
   font-weight: 400;
   padding: 27px;
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 768px) {
   .accordion-title {
     font-size: 17px;
     font-weight: 400;

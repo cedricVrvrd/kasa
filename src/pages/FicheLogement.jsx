@@ -27,7 +27,7 @@ const FicheLogement = () => {
 
   // si cardData...
   return logement ? (
-    <div>
+    <div className="main">
       <Slider logement={logement.pictures} />
       <section className="container_info">
         <div className="container_tittle">

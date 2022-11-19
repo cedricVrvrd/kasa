@@ -4,7 +4,7 @@ import CardContainer from "../components/CardContainer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="main">
       <Banner />
       <CardContainer />
     </div>

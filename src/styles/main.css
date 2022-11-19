@@ -5,6 +5,8 @@
 @import "../styles/components/cardContainer.css";
 @import "../styles/components/header.css";
 @import "../styles/components/slider.css";
+@import "../styles/components/footer.css";
+@import "../styles/components/rate.css";
 
 @import "../styles/pages/pageError.css";
 @import "../styles/pages/ficheLogement.css";
@@ -20,28 +22,8 @@
   margin-left: auto;
   margin-right: auto;
 }
-#root {
+.main {
   width: 93%;
-  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
 }
-
-/* ----------------------------------------------------------------------------- */
-/* ------------------------ rating --------------------------------------------- */
-/* ----------------------------------------------------------------------------- */
-.ratingStar .rateStar {
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
-}
-img.ratingStar {
-  margin-right: 10px;
-  font-size: 24px;
-}
-
-/* @media screen and (max-width: 640px) {
-  .accordion-title {
-    font-size: 13px;
-  }
-} */

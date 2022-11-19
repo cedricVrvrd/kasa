@@ -28,7 +28,7 @@
   text-decoration-line: underline;
   color: #ff6060;
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 768px) {
   #errorMsg h1 {
     font-size: 160px;
     margin-bottom: 11px;

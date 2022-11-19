@@ -27,7 +27,7 @@
   font-weight: 500;
   z-index: 50;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   #banner h2 {
     font-size: 30px;
   }

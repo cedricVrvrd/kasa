@@ -1,6 +1,6 @@
 import React from "react";
 import Accordion from "../components/Accordion";
-import Mountain from "../assets/images/mountain.png"
+import Mountain from "../assets/images/mountain.png";
 
 const Apropos = () => {
   const accordionData = [
@@ -35,13 +35,13 @@ const Apropos = () => {
   ];
 
   return (
-    <div>
-      <div className="aboutBanner" >
-      <img
-        className="bannerAbout"
-        src= {Mountain}
-        alt=" montagne enneigée avec cours d'eau"
-      />
+    <div className="main">
+      <div className="aboutBanner">
+        <img
+          className="bannerAbout"
+          src={Mountain}
+          alt=" montagne enneigée avec cours d'eau"
+        />
       </div>
       <div className="accordion">
         {accordionData.map(({ title, content }, index) => (

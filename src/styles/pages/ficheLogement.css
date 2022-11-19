@@ -79,3 +79,23 @@
 .accordionFiche li {
   list-style-type: none;
 }
+
+@media screen and (max-width: 1240px) {
+  .container_tittle h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container_info {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_info {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_hostRating {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+} ;

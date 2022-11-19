@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------------------------- */
+/* ------------------------ rating --------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+.ratingStar .rateStar {
+  margin-right: 10px;
+}
+img.ratingStar {
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+}
+@media screen and (max-width: 1240px) {
+  .ratingStar .rateStar {
+    margin-right: 8px;
+  }
+  img.ratingStar {
+    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ratingStar .rateStar {
+    margin-right: 8px;
+  }
+  img.ratingStar {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+}

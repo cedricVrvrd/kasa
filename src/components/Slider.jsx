@@ -19,7 +19,7 @@ const Slider = ({ logement }) => {
     setCurrentIndex((currentIndex - 1 + logement.length) % logement.length);
   };
   return (
-    <div>
+    <div className="carrousel">
       {/* Render the carousel */}
       <div className="slider-container">
         {logement.map((photo, index) => (
