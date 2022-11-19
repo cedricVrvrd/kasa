@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Slider from "../components/Slider";
 import Accordion from "../components/Accordion";
@@ -9,16 +9,21 @@ const FicheLogement = () => {
   // variables necessaires.
   const [logement, setLogement] = useState();
   const { id } = useParams();
+  const navigate = useNavigate();
   // on fetch sur la base de donnée et on tri sur l'id via .find()
   useEffect(() => {
     const fetcher = () =>
       fetch("../../dbLogements.json")
         .then((res) => res.json())
         .then((data) => {
-          setLogement(data.find((el) => el.id === id));
+          const ifLogement = data.find((el) => el.id === id);
+          setLogement(ifLogement);
+          if (!ifLogement) {
+            navigate("/PageError");
+          }
         });
     fetcher();
-  }, [logement, id]);
+  }, [logement, id, navigate]);
 
   // si cardData...
   return logement ? (
@@ -50,10 +55,10 @@ const FicheLogement = () => {
       </section>
 
       <div className="accordionFiche">
-        <div>
+        <div className="accordionContainer">
           <Accordion title="Description" content={logement.description} />
         </div>
-        <div>
+        <div className="accordionContainer">
           <Accordion
             title="Equipement"
             content={logement.equipments.map((item, index) => (

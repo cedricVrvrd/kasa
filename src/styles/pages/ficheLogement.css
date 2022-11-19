@@ -4,6 +4,9 @@
   margin-bottom: 24px;
 }
 .container_tittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-weight: 500;
   color: #ff6060;
 }
@@ -54,17 +57,21 @@
 
 /* --------------------accordion fiche logement---------------------------------- */
 .accordionFiche {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.accordionContainer {
+  width: 48%;
+  max-width: 582px;
 }
 .accordionFiche .accordion-item {
-  width: 582px;
+  width: 100%;
   font-size: 18px;
   font-weight: 400;
 }
 .accordionFiche .accordion-title {
-  width: 582px;
+  width: 100%;
   padding: 13px 20px;
   font-size: 18px;
   font-weight: 500;

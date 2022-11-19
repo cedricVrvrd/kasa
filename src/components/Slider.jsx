@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import arrowLeft from "../assets/images/arrowLeft.png";
+import arrowRight from "../assets/images/arrowRight.png";
 
 const Slider = ({ logement }) => {
   // show the photo with this index
@@ -29,19 +31,23 @@ const Slider = ({ logement }) => {
             <img src={photo} alt="vue du  bien à louer" className="photo" />
           </div>
         ))}
+        {logement.length > 1 ? (
+          <div>
+            <div className="slider__previous" onClick={prev}>
+              <img src={arrowLeft} alt="suivant" className="prev" />
+            </div>
+            <div className="slider__next" onClick={next}>
+              <img src={arrowRight} alt="precedent" className="next" />
+            </div>
 
-        {/* Previous button */}
-        <button onClick={prev} className="prev">
-          &lt;
-        </button>
-
-        {/* Next button */}
-        <button onClick={next} className="next">
-          &gt;
-        </button>
-      </div>
-      <div>
-        {currentIndex + 1}/{logement.length}
+            {/* affichage index/nombre photos */}
+            <div className="photoIndicator">
+              {currentIndex + 1}/{logement.length}
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
