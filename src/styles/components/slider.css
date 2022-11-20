@@ -87,4 +87,10 @@
     object-fit: cover;
     border-radius: 25px;
   }
+  .prev,
+  .next {
+    width: 12px;
+    height: 19px;
+    margin-top: -9px;
+  }
 }

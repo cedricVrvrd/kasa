@@ -9,7 +9,6 @@
   justify-content: flex-end;
   font-weight: 500;
   color: #ff6060;
-  max-width: 65%;
 }
 .container_tittle h2 {
   font-size: 36px;
@@ -91,6 +90,9 @@
   .container_title h2 {
     font-size: 24px;
   }
+  .container_tittle {
+    width: 68%;
+  }
 }
 @media screen and (max-width: 748px) {
   .container_tittle h2 {
@@ -107,6 +109,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .container_tittle {
+    width: 100%;
+  }
   .container_info {
     display: flex;
     flex-direction: column;
