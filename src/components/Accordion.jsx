@@ -3,10 +3,12 @@ import caretDown from "../assets/images/caretDown.png";
 import caretUp from "../assets/images/caretUp.png";
 
 const Accordion = ({ title, content }) => {
+  // par defaut, isActive = false
   const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="accordion-item">
+      {/* au clic on inverse valeur de isActive */}
       <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
         <div>{title}</div>
         <div>
@@ -17,6 +19,7 @@ const Accordion = ({ title, content }) => {
           )}
         </div>
       </div>
+      {/* si active, alors montre le contenu */}
       {isActive && <div className="accordion-content">{content}</div>}
     </div>
   );

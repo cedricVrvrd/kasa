@@ -3,11 +3,12 @@ import RedStar from "../assets/images/redStar.png";
 import GreyStar from "../assets/images/greyStar.png";
 
 const Rate = ({ rate }) => {
+  // on crée un tableau intermediaire afin de pouvoir "mapper"
   const stars = [1, 2, 3, 4, 5];
 
   return (
     <div className="rating">
-      {/* Loop to display star by rating */}
+      {/* on map sur le tableau, on compare avec la valeur de rate */}
       {stars.map((star, index) =>
         rate >= star ? (
           <img

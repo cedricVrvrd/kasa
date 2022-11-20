@@ -4,23 +4,19 @@ import arrowLeft from "../assets/images/arrowLeft.png";
 import arrowRight from "../assets/images/arrowRight.png";
 
 const Slider = ({ logement }) => {
-  // show the photo with this index
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // move to the next photo
-  // if we are at the end, go to the first photo
+  // photo suivante, si a la fin, retourne au debut
   const next = () => {
     setCurrentIndex((currentIndex + 1) % logement.length);
   };
 
-  // move to the previous photo
-  // if we are at the beginning, go to the last photo
+  // photo precedente, si au début, montre la dernière photo
   const prev = () => {
     setCurrentIndex((currentIndex - 1 + logement.length) % logement.length);
   };
   return (
     <div className="carrousel">
-      {/* Render the carousel */}
       <div className="slider-container">
         {logement.map((photo, index) => (
           <div
@@ -31,6 +27,7 @@ const Slider = ({ logement }) => {
             <img src={photo} alt="vue du  bien à louer" className="photo" />
           </div>
         ))}
+        {/* si plus de 1 photo, alors mise en place fleche et compteur */}
         {logement.length > 1 ? (
           <div>
             <div className="slider__previous" onClick={prev}>
@@ -39,7 +36,6 @@ const Slider = ({ logement }) => {
             <div className="slider__next" onClick={next}>
               <img src={arrowRight} alt="precedent" className="next" />
             </div>
-
             {/* affichage index/nombre photos */}
             <div className="photoIndicator">
               {currentIndex + 1}/{logement.length}
