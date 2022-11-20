@@ -19,6 +19,16 @@ img.ratingStar {
     height: 22px;
   }
 }
+@media screen and (max-width: 748px) {
+  .ratingStar .rateStar {
+    margin-right: 8px;
+  }
+  img.ratingStar {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+  }
+}
 @media screen and (max-width: 480px) {
   .ratingStar .rateStar {
     margin-right: 8px;

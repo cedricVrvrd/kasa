@@ -9,6 +9,7 @@
   justify-content: flex-end;
   font-weight: 500;
   color: #ff6060;
+  max-width: 65%;
 }
 .container_tittle h2 {
   font-size: 36px;
@@ -76,15 +77,35 @@
   font-size: 18px;
   font-weight: 500;
 }
+.accordionFiche .accordion-content {
+  width: 100%;
+  padding: 13px 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
 .accordionFiche li {
   list-style-type: none;
 }
 
 @media screen and (max-width: 1240px) {
-  .container_tittle h2 {
+  .container_title h2 {
     font-size: 24px;
   }
 }
+@media screen and (max-width: 748px) {
+  .container_tittle h2 {
+    font-size: 20px;
+  }
+  .list .spanList {
+    font-size: 10px;
+    padding: 0px 5px 0px 5px;
+  }
+  .host img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .container_info {
     display: flex;
@@ -97,5 +118,31 @@
   .container_hostRating {
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+  .list .spanList {
+    font-size: 10px;
+  }
+  .container_hostRating {
+    font-size: 12px;
+  }
+  .host img {
+    width: 32px;
+    height: 32px;
+  }
+  .accordionFiche {
+    flex-direction: column;
+  }
+  .accordionContainer {
+    width: 100%;
+  }
+  .accordionFiche .accordion-title {
+    font-size: 13px;
+  }
+  .accordionFiche .accordion-content {
+    font-size: 12px;
+  }
+  .accordionFiche img {
+    width: 15px;
+    height: 9px;
   }
 } ;
