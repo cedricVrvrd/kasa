@@ -13,7 +13,7 @@ const FicheLogement = () => {
   // on fetch sur la base de donnée et on tri sur l'id via .find()
   useEffect(() => {
     const fetcher = () =>
-      fetch("../../dbLogements.json")
+      fetch(`${process.env.PUBLIC_URL}/dbLogements.json`)
         .then((res) => res.json())
         .then((data) => {
           const ifLogement = data.find((el) => el.id === id);
@@ -23,7 +23,7 @@ const FicheLogement = () => {
           }
         });
     fetcher();
-  }, [logement, id, navigate]);
+  }, [id, navigate]);
 
   // si cardData...
   return logement ? (

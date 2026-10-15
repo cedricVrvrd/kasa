@@ -7,7 +7,7 @@ const CardContainer = () => {
 
   // fetch sur le fichier json contenant la liste de nos logements
   useEffect(() => {
-    fetch("../../dbLogements.json")
+    fetch(`${process.env.PUBLIC_URL}/dbLogements.json`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
